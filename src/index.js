@@ -40,6 +40,7 @@ app.use(morgan('tiny'));
 app.use(helmet());
 app.use(extendedRequestMiddleware);
 
+// added the routes here
 app.route('/').get(async (req, res, next) =>
   res.status(200).json({
     msg: 'Success',
